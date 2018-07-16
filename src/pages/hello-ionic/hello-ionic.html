@@ -3,23 +3,45 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-title>Inventory Control</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
+   
+  
+  <h1>Welcome Inventory Manager</h1>
+  
 
-  <h3>Welcome to your first Ionic app!</h3>
+  <div class="input">
+    <ion-item>
+    <ion-label fixed>UserName</ion-label>
+   <ion-input type="username" [(ngModel)]="username" ></ion-input>
+  </ion-item>
 
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+   <ion-input type="password" name="" id="" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  </div>
+
+
+  <div>
+    <h1>{{this.failmessage}}</h1>
+    
+  </div>
+  
+
+  <button ion-button color="primary" (click)="signin()">Sign In</button>
+
   <p>
     <button ion-button color="primary" menuToggle>Toggle Menu</button>
   </p>
 
+  <button ion-button color="primary" (click)="signup()">Signup</button>
+
+
 </ion-content>
+
+

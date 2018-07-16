@@ -1,0 +1,53 @@
+<!--
+  Generated template for the AddproductsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>addproducts</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+
+        <ion-item>
+          <ion-label fixed>Product Name</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label fixed>Quantity</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+      
+         <ion-item>
+            <ion-label fixed>Price</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+             <ion-item>
+              <ion-label fixed>File</ion-label>
+              <ion-input type="file"></ion-input>
+            </ion-item>
+
+      </ion-list>
+       <button ion-button color="primary" (click)="openCam()">Take Picture</button>
+     
+        <div>
+         <!--<ion-img [width]="imgWidth" [height]="imgHeight" src="..."></ion-img> -->
+         
+         
+         <img src="{{Myimage}}" >
+         <button ion-button color="primary" (click)="uploadfile()">Upload</button>
+        </div>
+        
+        
+
+
+</ion-content>
+

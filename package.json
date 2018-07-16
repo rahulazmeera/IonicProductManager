@@ -20,12 +20,28 @@
     "@angular/http": "5.0.0",
     "@angular/platform-browser": "5.0.0",
     "@angular/platform-browser-dynamic": "5.0.0",
-    "@ionic-native/core": "4.3.2",
+    "@ionic-native/camera": "^4.9.1",
+    "@ionic-native/core": "^4.3.2",
+    "@ionic-native/file": "^4.9.2",
+    "@ionic-native/file-path": "^4.9.2",
+    "@ionic-native/file-transfer": "^4.9.2",
+    "@ionic-native/http": "^4.9.2",
     "@ionic-native/splash-screen": "4.3.2",
     "@ionic-native/status-bar": "4.3.2",
     "@ionic/storage": "2.1.3",
+    "cordova-android": "^6.4.0",
+    "cordova-browser": "^5.0.3",
+    "cordova-ios": "^4.4.0",
+    "cordova-plugin-camera": "^4.0.3",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-device": "^1.1.4",
+    "cordova-plugin-ionic-webview": "^1.2.1",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-whitelist": "^1.3.1",
     "ionic-angular": "3.9.2",
+    "ionic-plugin-keyboard": "^2.2.1",
     "ionicons": "3.0.0",
+    "latest": "^0.2.0",
     "rxjs": "5.5.2",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.18"
@@ -33,8 +49,25 @@
   "devDependencies": {
     "@ionic/app-scripts": "3.1.0",
     "@ionic/cli-plugin-ionic-angular": "1.4.1",
+    "@types/node": "^10.5.2",
     "ionic": "3.20.0",
     "typescript": "2.4.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-whitelist": {},
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-compat": {}
+    },
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
+  }
 }
