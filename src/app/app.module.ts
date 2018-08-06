@@ -14,6 +14,9 @@ import { SignupserviceProvider } from '../providers/signupservice/signupservice'
 import { HttpModule } from '@angular/http';
 import {HTTP} from '@ionic-native/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MapsPage } from '../pages/maps/maps'
+import { Geolocation } from '@ionic-native/geolocation';
+import { Geofence } from '@ionic-native/geofence';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     ItemDetailsPage,
     ListPage,
     AddproductsPage,
-    SignupPage
+    SignupPage,
+    MapsPage 
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     ItemDetailsPage,
     ListPage,
     AddproductsPage,
-    SignupPage
+    SignupPage,
+    MapsPage 
   ],
   providers: [
     StatusBar,
@@ -46,7 +51,9 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SignupserviceProvider,
     HTTP,
-    HttpClient
+    HttpClient,
+    Geolocation,
+    Geofence
   ]
 })
 export class AppModule {}

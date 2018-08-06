@@ -4,6 +4,7 @@ import { AddproductsPage } from '../addproducts/addproducts';
 import { SignupPage } from '../signup/signup';
 import { Http , Headers, HttpModule} from '@angular/http';
 import { ItemDetailsPage } from '../item-details/item-details';
+import { MapsPage } from '../maps/maps';
 import 'rxjs/add/operator/map';
 @Component({
   selector: 'page-hello-ionic',
@@ -65,6 +66,10 @@ signup(){
   this.navCtrl.push(SignupPage);
 }
 
+
+openmaps(){
+  this.navCtrl.push(MapsPage);
+}
 
 
 }
