@@ -5,6 +5,9 @@ import { SignupPage } from '../signup/signup';
 import { Http , Headers, HttpModule} from '@angular/http';
 import { ItemDetailsPage } from '../item-details/item-details';
 import { MapsPage } from '../maps/maps';
+import { WeatherPage } from '../weather/weather';
+import {ChatSupportPage} from '../chat-support/chat-support';
+
 import 'rxjs/add/operator/map';
 @Component({
   selector: 'page-hello-ionic',
@@ -71,5 +74,12 @@ openmaps(){
   this.navCtrl.push(MapsPage);
 }
 
+Weather(){
+  this.navCtrl.push(WeatherPage);
+}
+
+supportPage(){
+  this.navCtrl.push(ChatSupportPage);
+}
 
 }

@@ -17,7 +17,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MapsPage } from '../pages/maps/maps'
 import { Geolocation } from '@ionic-native/geolocation';
 import { Geofence } from '@ionic-native/geofence';
-
+import { WeatherPage } from '../pages/weather/weather';
+import {ChatSupportPage} from '../pages/chat-support/chat-support'
 @NgModule({
   declarations: [
     MyApp,
@@ -26,7 +27,9 @@ import { Geofence } from '@ionic-native/geofence';
     ListPage,
     AddproductsPage,
     SignupPage,
-    MapsPage 
+    MapsPage,
+    WeatherPage,
+    ChatSupportPage 
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,9 @@ import { Geofence } from '@ionic-native/geofence';
     ListPage,
     AddproductsPage,
     SignupPage,
-    MapsPage 
+    MapsPage,
+    WeatherPage,
+    ChatSupportPage 
   ],
   providers: [
     StatusBar,
